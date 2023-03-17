@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Downloadable and PDF Files</title>	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+
+		body {
+
+			font-family: Arial, sans-serif;
+
+			background-color: #f5f5f5;
+
+		}
+
+		.container {
+
+			max-width: 800px;
+
+			margin: 0 auto;
+
+			padding: 20px;
+
+			background-color: #fff;
+
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+		}
+
+		h1 {
+
+			text-align: center;
+
+			margin-top: 0;
+
+		}
+
+		select {
+
+			padding: 8px;
+
+			font-size: 16px;
+
+			border: none;
+
+			border-radius: 4px;
+
+			background-color: #f2f2f2;
+
+		}
+
+		.file-link {
+
+			display: block;
+
+			margin: 10px 0;
+
+			font-size: 18px;
+
+			color: #0366d6;
+
+			text-decoration: none;
+
+			text-align: center;
+
+			border: 2px solid #0366d6;
+
+			border-radius: 4px;
+
+			padding: 8px 16px;
+
+			transition: all 0.3s ease-in-out;
+
+		}
+
+		.file-link:hover {
+
+			background-color: #0366d6;
+
+			color: #fff;
+
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<h1>Downloadable and PDF Files</h1>
+
+		<form>
+
+			<label for="file-select">Select a file:</label>
+
+			<select id="file-select" onchange="window.location.href=this.value">
+
+				<option value="#">-- Select a file --</option>
+
+				<option value="https://discord.com/channels/692732329810067467/1086355832926646272/1086355925981474937">Document PDF</option>
+
+				<option value="https://example.com/files/presentation.pdf">Presentation PDF</option>
+
+				<option value="https://example.com/files/report.docx" download>Report DOCX</option>
+
+				<option value="https://example.com/files/spreadsheet.xlsx" download>Spreadsheet XLSX</option>
+
+			</select>
+
+		</form>
+
+		<a href="https://discord.com/channels/692732329810067467/1086355832926646272/1086355925981474937" class="file-link">Download Document PDF</a>
+
+		<a href="https://example.com/files/presentation.pdf" class="file-link">Download Presentation PDF</a>
+
+		<a href="https://example.com/files/report.docx" download class="file-link">Download Report DOCX</a>
+
+		<a href="https://example.com/files/spreadsheet.xlsx" download class="file-link">Download Spreadsheet XLSX</a>
+
+	</div>
+
+</body>
+
+</html>
